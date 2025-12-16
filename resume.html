@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isha Tale | Resume</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: linear-gradient(180deg, #f6e6ff, #fff7ef);
+      --bg-hero: linear-gradient(90deg, #e8d7ff, #ffd6ea);
+      --text-main: #333;
+      --card-bg: #ffffff;
+      --accent: #ff2fa0;
+      --accent-2: #6a1bbd;
+    }
+
+    body.dark {
+      --bg-main: linear-gradient(180deg, #0f0f1a, #141428);
+      --bg-hero: linear-gradient(90deg, #1f1f3a, #2a1740);
+      --text-main: #eaeaf0;
+      --card-bg: #1e1e35;
+      --accent: #ff7ac8;
+      --accent-2: #b48cff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      transition: background 0.5s ease, color 0.5s ease;
+    }
+
+    .hero {
+      padding: 80px 0;
+      background: var(--bg-hero);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent-2);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .connect-box {
+      border: 2px solid #e8c8ff;
+      border-radius: 16px;
+      padding: 20px;
+      background: var(--card-bg);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- DARK MODE TOGGLE -->
+  <div class="theme-toggle">
+    <button id="themeBtn" class="btn btn-outline-dark btn-sm">🌙 Dark</button>
+  </div>
+
+  <!-- HERO SECTION -->
+  <!-- HERO SECTION WITH PROFILE IMAGE -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 text-md-start text-center">
+          <h1>Isha Tale</h1>
+          <p id="typing-text" class="fw-semibold text-muted"></p>
+          <p>
+Enthusiastic B.Tech IT student with a strong interest in modern technologies and software development.
+Passionate about building scalable applications and solving real-world problems through technology.
+Eager to learn, grow, and contribute to innovative projects in a dynamic environment.          </p>
+          <a href="#connect" class="btn btn-dark btn-lg mt-3 me-2">Let's Connect</a>
+          <a href="Isha Tale Resume .pdf" download class="btn btn-outline-dark btn-lg mt-3">Download Resume</a>
+        </div>
+        <div class="col-md-5 text-center mt-4 mt-md-0">
+          <img src="isha pic.jpg" alt="Isha Tale" class="img-fluid rounded-circle shadow" style="max-width:300px; border:6px solid #fff;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="info-card">
+            <p>
+              As a passionate and driven engineering student specializing in Information Technology, I thrive at the intersection of innovation and problem-solving. I have a strong enthusiasm for coding, software design, and emerging technologies that have the potential to shape the future.
+
+With a solid foundation in programming languages like Java, or oops and hands-on experience with web development , I’m constantly exploring ways to build efficient and scalable solutions.
+
+What excites me most is learning how technology can solve real-world challenges. Whether it's developing user-friendly applications or analyzing data for meaningful insights, I’m always eager to push my technical and creative boundaries.
+
+Beyond academics, I enjoy collaborating on team projects, and staying updated on trends like AI and machine learning. These experiences fuel my desire to contribute to meaningful tech advancements..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info-card">Java, Spring Boot, Hibernate</div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card">HTML, CSS, JavaScript, React</div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card">MySQL, PostgreSQL, Git, GitHub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-card">
+            <h5>Billing Management System</h5>
+            <p>
+             Developed an Electricity Billing System using JDBC and MYSQL backend to automate meter
+reading entry,bill calculation, and invoice generation, improvingaccuracy and efficiency in customer billing.
+
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-card">
+            <h5>Medicare Web Application</h5>
+            <p>
+             Developed a Medicare management website using React, Spring Boot, and PostgreSQL, offering a smooth and
+secure platform for booking appointments and accessing healthcare services. Implemented a responsive UI
+with efficient backend APIs and robust data handling
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-card">
+            <h5>Private Car Rental System</h5>
+            <p>
+              Developed a car rental website using HTML, CSS, JavaScript, MySQL, and Spring MVC,
+              providing a smooth platform for browsing and booking vehicles. Implemented secure
+              backend operations, rental management, and a responsive user-friendly interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT SECTION (MATCHING YOUR SCREENSHOT) -->
+  <section class="connect-section" id="connect">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="section-title">Let's Connect</h2>
+          <h5 class="text-danger mb-3">Ready to Collaborate</h5>
+          <p>
+            I'm always excited to connect with fellow tech enthusiasts, potential collaborators,
+            and industry professionals. Whether you're interested in discussing emerging
+            technologies, exploring project opportunities, or simply sharing ideas, I'd love to
+            hear from you.
+          </p>
+          <p>
+            Based in Nagpur, Maharashtra, India. Open to remote opportunities and collaborative
+            projects.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="connect-box">
+            <h5>Email</h5>
+            <a href="mailto:ishatale191@gmail.com">ishatale191@gmail.com</a>
+          </div>
+          <div class="connect-box">
+            <h5>LinkedIn</h5>
+            <a href="https://www.linkedin.com/in/isha-tale-218641288" target="_blank">Connect with me</a>
+          </div>
+          <div class="connect-box">
+            <h5>Quick Message</h5>
+            <form id="contactForm">
+              <input class="form-control mb-2" type="text" placeholder="Your Name" required />
+              <input class="form-control mb-2" type="email" placeholder="Your Email" required />
+              <textarea class="form-control mb-2" rows="3" placeholder="Your Message" required></textarea>
+              <button class="btn btn-dark w-100" type="submit">Send Message</button>
+            </form>
+            <small id="formStatus" class="text-success"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Isha Tale | Made with ❤️
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- ADVANCED JAVASCRIPT -->
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))?.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Typing effect for hero subtitle
+    const text = "Full-Stack Developer | Web Enthusiast | Tech Explorer";
+    let index = 0;
+    const speed = 70;
+
+    function typeEffect() {
+      const target = document.getElementById("typing-text");
+      if (!target) return;
+      if (index < text.length) {
+        target.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, speed);
+      }
+    }
+    window.addEventListener('load', typeEffect);
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.info-card, .connect-box');
+
+    const revealOnScroll = () => {
+      revealElements.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.style.transform = 'translateY(0)';
+          el.style.opacity = '1';
+        }
+      });
+    };
+
+    revealElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'all 0.8s ease';
+    });
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Dark mode toggle
+    const btn = document.getElementById('themeBtn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+    });
+  </script>
+</body>
+</html>
